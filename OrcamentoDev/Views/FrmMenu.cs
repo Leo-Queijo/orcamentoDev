@@ -14,5 +14,16 @@ namespace OrcamentoDev.Views
         {
             InitializeComponent();
         }
+
+        private void lblBoasVindas_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            Application.OpenForms["FrmLogin"]?.Show();
+            this.Close();
+        }
     }
 }
