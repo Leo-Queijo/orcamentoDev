@@ -49,6 +49,7 @@
             prgCarregando.Location = new Point(-3, 180);
             prgCarregando.Name = "prgCarregando";
             prgCarregando.Size = new Size(886, 44);
+            prgCarregando.Style = ProgressBarStyle.Marquee;
             prgCarregando.TabIndex = 1;
             // 
             // timer1
@@ -68,12 +69,15 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1005, 224);
+            BackColor = SystemColors.ActiveCaption;
+            ClientSize = new Size(884, 224);
             Controls.Add(lblCarregando);
             Controls.Add(prgCarregando);
             Controls.Add(lblTituloSplash);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "FrmSplash";
             Text = "Splash";
+            Load += FrmSplash_Load;
             ResumeLayout(false);
             PerformLayout();
         }

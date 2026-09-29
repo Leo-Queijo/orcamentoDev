@@ -29,7 +29,7 @@ namespace OrcamentoDev.Views
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if(prgCarregando.Value < 100)
+            if (prgCarregando.Value < 100)
             {
                 prgCarregando.Value += 2;
             }
@@ -41,6 +41,11 @@ namespace OrcamentoDev.Views
                 login.Show();
                 this.Hide();
             }
+        }
+
+        private void FrmSplash_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
